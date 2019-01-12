@@ -2,7 +2,7 @@
 . ../development
 
 sudo apt install snapd
-systemctl start snapd.service
+service snapd start
 
 # user apps
 snap install telegram-desktop
