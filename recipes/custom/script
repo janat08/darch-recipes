@@ -1,0 +1,7 @@
+#!/bin/bash
+. ../development
+
+# user apps
+snap install telegram-desktop
+# av
+

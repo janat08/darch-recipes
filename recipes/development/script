@@ -32,7 +32,7 @@ add-apt-repository "deb https://download.docker.com/linux/ubuntu bionic stable"
 # has /usr/bin/containerd, which conflicts with Darch.
 apt-get install -y docker-ce=18.06.1~ce~3-0~ubuntu
 systemctl enable docker
-usermod -aG docker pknopf
+usermod -aG docker jk
 
 # Install .NET Core
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O /tmp/dotnet.deb

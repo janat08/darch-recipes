@@ -8,7 +8,7 @@ TAG=`date +"%Y-%m-%d-%H%M%S"`
 
 sudo darch recipes build \
     -t "$TAG,latest" \
-    -p "pauldotknopf/darch-ubuntu-" \
+    -p "janat08/darch-ubuntu-" \
     -e ROOT_PASSWD=$ROOT_PASWD \
     -e USER_PASSWD=$USER_PASSWD \
     $IMAGES
