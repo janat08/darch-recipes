@@ -36,7 +36,7 @@ echo -e 'LANG="en_US.UTF-8"\nLANGUAGE="en_US:en"\n' > /etc/default/locale
 
 # Set the timezone to EST
 rm /etc/localtime
-ln -s ../usr/share/zoneinfo/America/New_York /etc/localtime
+ln -s ../usr/share/zoneinfo/Asia/Almaty /etc/localtime
 
 # We need this in a few places.
 apt-get install -y tasksel gdebi-core

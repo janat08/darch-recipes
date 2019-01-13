@@ -4,6 +4,8 @@ addons:
   apt:
     packages:
       - libseccomp-dev
+  snaps:
+  - hugo
 before_install:
 - sudo apt-get -y install curl gnupg software-properties-common
 - wget -O- -q https://github.com/containerd/containerd/releases/download/v1.2.0/containerd-1.2.0.linux-amd64.tar.gz | sudo tar xpz -C /
@@ -14,5 +16,8 @@ before_install:
 - sudo ctr version
 - sudo runc --version
 - sudo darch images pull godarch/ubuntu:cosmic
+install:
+- sudo apt-get --yes install snapd
+- sudo snap install hugo
 script:
 - "./ci"

@@ -1,9 +1,6 @@
 #!/bin/bash
 . ../development
 
-sudo apt install snapd
-service snapd start
-
 # user apps
 snap install telegram-desktop
 # av
